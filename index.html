@@ -2,69 +2,79 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Нёрдс</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<!--начало тела документа-->
 
 <body>
   <!--Шапка сайта начало-->
   <header class="main-header">
-    <a class="main-header-logo">
-      <img src="img/logo.svg" width="163" height="35" alt="Логотип нердс">
-    </a>
-    <div class="main-navigation">
-      <ul class="middle-header-menu">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип нердс" />
+      </a>
+      <ul class="site-navigation">
         <li><a class="" href="#">Студия</a></li>
         <li><a class="" href="#">Клиенты</a></li>
-        <li><a class="" href="#">Магазин</a></li>
+        <li><a class="" href="catalog.html">Магазин</a></li>
         <li><a class="" href="#">Контакты</a></li>
       </ul>
-    </div>
-    <div class="align-basket">
-      <a class="basket" href="#">Корзина</a>
-    </div>
-    <!--Шапка сайта конец-->
+      <div class="cart">
+        <a href="#">Корзина</a>
+      </div>
+    </nav>
   </header>
+  <!--Шапка сайта конец-->
   <!--Основной контент начало-->
   <main class="container">
+    <h1 class="visually-hidden">Дизайн студия нёрдс</h1>
     <!--Секция слайдера начало-->
     <section class="main-slider">
-      <div class="wrapper-slide">
+      <div class="radio-slider-buttons">
+        <a href="#" class="radio-button radio-active-button">переключатель 1</a>
+        <a href="#" class="radio-button">переключатель 2</a>
+        <a href="#" class="radio-button">переключатель 2</a>
+      </div>
+      <div class="wrapper-slider-1">
         <h2 class="visually-hidden">Слайдер товаров</h2>
-        <div class="radio-slide-buttons">
-          <a href="#" class="radio-active-button">переключатель 1</a>
-          <a href="#" class="radio-button">переключатель 2</a>
-          <a href="#" class="radio-button">переключатель 2</a>
-        </div>
-        <div class="slide slide-active">
-          <h3 class="h3-slide">Долго, дорого, скрупулезно.</h3>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-            превыше креатива. Работаем не покладая рук, как роботы</p>
+        <div class="info-slider info-slider-active">
+          <h3 class="h3-slider h3-slider-active">Долго, дорого, скрупулезно.</h3>
+          <p class="p-slider p-slider-active">
+            Математически выверенный дизайн
+            для вашего сайта или мобильного приложения.
+          </p>
           <a class="button" href="#">Узнать больше</a>
         </div>
-        <div class="img-slide">
-          <img src="#" width="" height="" alt="картинка слайдера_1">
+        <div class="img-slider img-slider-active">
+          <img src="http://placehold.it/698x413" width="" height="" alt="картинка слайдера_1" />
         </div>
-        <div class="slide">
-          <h3 class="h3-slide">Любим математику как никто другой</h3>
-          <p>Никакого креатива, только математические формулы
-            для расчета идеальных пропорций.</p>
+      </div>
+      <div class="wrapper-slider-2 visually-hidden">
+        <div class="info-slider">
+          <h3 class="h3-slider">Любим математику как никто другой</h3>
+          <p class="p-slider">
+            Никакого креатива, только математические формулы для расчета
+            идеальных пропорций.
+          </p>
           <a class="button" href="#">Узнать больше</a>
         </div>
-        <div class="img-slide">
-          <img src="#" width="" height="" alt="картинка слайдера_2">
+        <div class="img-slider">
+          <img src="http://placehold.it/698x413" width="" height="" alt="картинка слайдера_2" />
         </div>
-        <div class="slide">
-          <h3 class="h3-slide">Только ночь, только хардкор</h3>
-          <p>Работать днем, как все? Мы против этого.
-            Ближе к полуночи работа только начинается.</p>
+      </div>
+      <div class="wrapper-slider-3 visually-hidden">
+        <div class="info-slider">
+          <h3 class="h3-slider">Только ночь, только хардкор</h3>
+          <p class="p-slider">
+            Работать днем, как все? Мы против этого. Ближе к полуночи работа
+            только начинается.
+          </p>
           <a class="button" href="#">Узнать больше</a>
         </div>
-        <div class="img-slide">
-          <img src="#" width="" height="" alt="картинка слайдера_3">
+        <div class="img-slider">
+          <img src="http://placehold.it/698x413" width="" height="" alt="картинка слайдера_3" />
         </div>
       </div>
     </section>
@@ -97,9 +107,11 @@
     <section class="main-about-us">
       <div class="wrapper-about-us">
         <div class="wrap-left">
-          <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара</h1>
-          <p class="about-us-p">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-            превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <b>Мы — маленькая, но гордая дизайн-студия из Краснодара</b>
+          <p class="about-us-p">
+            Исповедуем принципы минимализма и чистоты. Ставим математический
+            расчет превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
           <h3 class="about-us-h3">Выполняем заказы на разработку:</h3>
           <ul class="about-us-ul">
             <li>Веб-сайтов любой сложности</li>
@@ -109,7 +121,7 @@
         </div>
         <div class="wrap-right">
           <h3 class="table-h3">с 2004 года Любим точность во всем:</h3>
-          <table>
+          <table class="table">
             <tr>
               <th>146<sup>%</sup></th>
               <th>100<sup>%</sup></th>
@@ -131,56 +143,64 @@
       <div class="wrapper-brands">
         <h2 class="visually-hidden">Бренды компаний</h2>
         <a class="brand" href="#">
-          <img class="brand-active" src="#" width="" height="" alt="Логотип бренда">
+          <img class="brand-active" src="#" width="" height="" alt="Логотип бренда" />
         </a>
         <a class="brand" href="#">
-          <img class="brand-active" src="#" width="" height="" alt="Логотип бренда">
+          <img class="brand-active" src="#" width="" height="" alt="Логотип бренда" />
         </a>
         <a class="brand" href="#">
-          <img class="brand-active" src="#" width="" height="" alt="Логотип бренда">
+          <img class="brand-active" src="#" width="" height="" alt="Логотип бренда" />
         </a>
         <a class="brand" href="#">
-          <img class="brand-active" src="#" width="" height="" alt="Логотип бренда">
+          <img class="brand-active" src="#" width="" height="" alt="Логотип бренда" />
         </a>
       </div>
     </section>
     <!--Секция бренды конец-->
-
-    <!--Модалка карты начало-->
-    <section class="map">
-      <h2 class="visually-hidden">Наш адрес:</h2>
-      <a href="https://yandex.ru/maps"><img src="img/map-big.jpg" width="" height="" alt="карта проезда"></a>
-      <div class="modal-map">
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-        <p>тел. +7 (812) 275-75-75</p>
-        <button type="button" class="modal">Напишите нам</button>
-      </div>
-    </section>
-    <!--Модалка карты конец-->
-
-    <!--Подвал сайта начало-->
-    <footer>
-      <h2 class="visually-hidden">Подвал</h2>
-      <div class="wrapper-footer">
-        <div class="wrapper-social">
-          <a class="social social-vkontakte" href="#">vkontakte</a>
-          <a class="social social-facebook" href="#">facebook</a>
-          <a class="social social-instagram" href="#">instagram</a>
-        </div>
-        <div class="">
-          <h3>Довайте дружить, это выгодно!</h3>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </div>
-    </footer>
-    <!--Подвал сайта конец-->
   </main>
   <!--Основной контент конец-->
 
-
-
+  <!--карта начало-->
+  <section class="map">
+    <h2 class="visually-hidden">Наш адрес:</h2>
+    <a href="https://yandex.ru/maps"><img src="http://placehold.it/1440x415" width="" height=""
+        alt="карта проезда" /></a>
+    <div class="modal-map">
+      <h2>NЁRDS DESIGN STUDIO</h2>
+      <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+      <p>тел. +7 (812) 275-75-75</p>
+      <button type="button" class="modal">Напишите нам</button>
+    </div>
+  </section>
+  <!--карта конец-->
+  <!--Подвал сайта начало-->
+  <footer class="main-footer">
+    <h2 class="visually-hidden">Подвал</h2>
+    <div class="wrapper-footer">
+      <div class="footer-social">
+        <ul class="social-list">
+          <li><a class="social social-vkontakte" href="#">vkontakte</a></li>
+          <li><a class="social social-facebook" href="#">facebook</a></li>
+          <li><a class="social social-instagram" href="#">instagram</a></li>
+        </ul>
+      </div>
+      <div class="">
+        <b class="b-footer">Довайте дружить, это выгодно!</b>
+        <p class="p-footer">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+  <!--Подвал сайта конец-->
+  <section class="modal modal-message">
+    <h3>Напишите нам</h3>
+    <form class="form">
+      <input class="name" type="name">
+      <input class="email" type="email">
+      <textarea class="description"></textarea>
+      <button class="button">Отправить</button>
+    </form>
+    <span class="modal-close">x</span>
+  </section>
 </body>
-<!--конец тела документа-->
 
 </html>
